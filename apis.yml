@@ -1,7 +1,12 @@
 aid: kango
 name: Kango
-description: Kango is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kango is an on-demand rides and childcare platform for families, connecting parents and schools
+  with background-checked, fingerprinted drivers and sitters who transport and care for children from preschool
+  through high school. Operated by Dolightful, Inc. and backed by 500 Global, Kango offers prescheduled and
+  same-day rides, real-time ride tracking, in-app communication with drivers, provided car and booster seats,
+  in-home sitter sessions, and a free carpool feature promoted by schools and camps. It runs on iOS and Android
+  apps using a subscription plus per-ride and per-session fee model. Kango is a consumer mobile product and
+  publishes no public developer API, SDK, or documentation surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/kango/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +14,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://images.kangoapp.com/s/og/home-page-og.png
 tags:
 - Company
+- Childcare
+- Transportation
+- Ridesharing
+- Family
+- Mobility
+- On-Demand
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kango-domain-security.yml
 - type: Website
   url: https://kangoapp.co
+- type: Support
+  url: https://www.kangoapp.co/contact.html
+- type: Blog
+  url: https://www.kangoapp.com/news.html
+- type: TermsOfService
+  url: https://www.kangoapp.com/terms.html
+- type: PrivacyPolicy
+  url: https://www.kangoapp.com/privacy.html
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
